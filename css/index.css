@@ -342,7 +342,8 @@
 		margin-right: 0.5rem;
 		justify-content: center;
 		font-family: "Jockey One", sans-serif;
-		font-kerning: normal;
+		letter-spacing: 0px;
+		line-height: 0.92;
 		text-align: center;
 		font-variant: small-caps;
 	}
@@ -375,7 +376,6 @@
 	h1 span.two {
 		position: absolute;
 		bottom: 0;
-		line-height: 1em;
 	}
 	
 	h1 span.two::first-letter {
@@ -581,7 +581,8 @@
 		font-family: "Jockey One", sans-serif;
 		text-align: center;
 		font-variant: small-caps;
-		font-kerning: normal;
+		letter-spacing: 0px;
+		line-height: 0.92;
 		color: rgba(255, 255, 255, 0.6);
 	}
 
