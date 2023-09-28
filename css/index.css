@@ -475,8 +475,8 @@ nav a {
 }
 
 nav a::before {
-	content: "▶";
-	color: #ffffff;
+	content: url("../imgs/arrow_icon.svg");
+	width: 0.7em;
 	margin-right: 1em;
 	margin-top: 0.2em;
 	font-size: 0.5em;
@@ -484,8 +484,8 @@ nav a::before {
 }
 
 nav a::after {
-	content: "◀";
-	color: #ffffff;
+	content: url("../imgs/arrow_icon2.svg");
+	width: 0.7em;
 	margin-left: 1em;
 	margin-top: 0.2em;
 	font-size: 0.5em;

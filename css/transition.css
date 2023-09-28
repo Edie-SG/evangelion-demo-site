@@ -42,6 +42,9 @@
 
 /* inner transition effect */
 @media (max-width: 1000px) and (aspect-ratio <= 1) {
+	:root {
+		overflow: hidden;
+	}
 	
 	.transition {
 		position: fixed;
@@ -52,7 +55,7 @@
 	}
 	
 	.transition svg {
-		position: inherit;
+		position: relative;
 		width: min(25vmax, 400px);
 		height: min-content;
 		fill: none;
@@ -73,57 +76,55 @@
 		inset: 0;
 		z-index: 10;
 		background: #161616;
-		opacity: 0;
-		pointer-events: none;
+		transform: translateX(-100%);
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
 	}
 	
 	.transition1.Active {
-		position: fixed;
+		transform: translateX(0);
 		opacity: 1;
-		pointer-events: all;
 	}
 	
 	.transition2 {
 		position: fixed;
 		inset: 0;
-		transform: translateX(100%);
+		transform: translateY(-100%);
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
-		opacity: 1;
 	}
 	
 	.transition2.Active {
-		transform: translateX(0);
-	}
-	
-	.transition3 {
-		position: fixed;
-		inset: 0;
-		transform: translateX(-100%);
-		z-index: 10;
-		background: #161616;
-		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
+		transform: translateY(0);
 		opacity: 1;
 	}
 	
-	.transition3.Active {
-		transform: translateX(0);
-	}
-	
-	.transition4 {
+	.transition3 {
 		position: fixed;
 		inset: 0;
 		transform: translateY(100%);
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
+	}
+	
+	.transition3.Active {
+		transform: translateY(0);
 		opacity: 1;
+	}
+	
+	.transition4 {
+		position: fixed;
+		inset: 0;
+		transform: translateX(100%);
+		z-index: 10;
+		background: #161616;
+		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
 	}
 	
 	.transition4.Active {
 		transform: translateX(0);
+		opacity: 1;
 	}
 
 	div.tranSquare {
@@ -243,7 +244,10 @@
 }
 
 @media (min-width: 1001px) and (min-height: 821px) {
-	
+	:root {
+		overflow: hidden;
+	}
+
 	.transition {
 		position: fixed;
 		inset: 0;
@@ -280,6 +284,7 @@
 	
 	.transition1.Active {
 		transform: translateX(0);
+		opacity: 1;
 	}
 	
 	.transition2 {
@@ -289,11 +294,11 @@
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
-		opacity: 1;
 	}
 	
 	.transition2.Active {
 		transform: translateY(0);
+		opacity: 1;
 	}
 	
 	.transition3 {
@@ -303,11 +308,11 @@
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
-		opacity: 1;
 	}
 	
 	.transition3.Active {
 		transform: translateY(0);
+		opacity: 1;
 	}
 	
 	.transition4 {
@@ -317,11 +322,11 @@
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
-		opacity: 1;
 	}
 	
 	.transition4.Active {
 		transform: translateX(0);
+		opacity: 1;
 	}
 
 	div.tranSquare {
@@ -449,7 +454,10 @@
 }
 
 @media (max-height: 820px) and (aspect-ratio > 1), (max-width: 1000px) and (min-height: 821px) and (aspect-ratio > 1) {
-
+	:root {
+		overflow: hidden;
+	}
+	
 	.transition {
 		position: fixed;
 		inset: 0;
@@ -459,7 +467,7 @@
 	}
 	
 	.transition svg {
-		position: inherit;
+		position: relative;
 		width: min(25vmax, 400px);
 		height: min-content;
 		fill: none;
@@ -480,57 +488,55 @@
 		inset: 0;
 		z-index: 10;
 		background: #161616;
-		opacity: 0;
-		pointer-events: none;
+		transform: translateX(-100%);
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
 	}
 	
 	.transition1.Active {
-		position: fixed;
+		transform: translateX(0);
 		opacity: 1;
-		pointer-events: all;
 	}
 	
 	.transition2 {
 		position: fixed;
 		inset: 0;
-		transform: translateX(100%);
+		transform: translateY(-100%);
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
-		opacity: 1;
 	}
 	
 	.transition2.Active {
-		transform: translateX(0);
-	}
-	
-	.transition3 {
-		position: fixed;
-		inset: 0;
-		transform: translateX(-100%);
-		z-index: 10;
-		background: #161616;
-		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
+		transform: translateY(0);
 		opacity: 1;
 	}
 	
-	.transition3.Active {
-		transform: translateX(0);
-	}
-	
-	.transition4 {
+	.transition3 {
 		position: fixed;
 		inset: 0;
 		transform: translateY(100%);
 		z-index: 10;
 		background: #161616;
 		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
+	}
+	
+	.transition3.Active {
+		transform: translateY(0);
 		opacity: 1;
+	}
+	
+	.transition4 {
+		position: fixed;
+		inset: 0;
+		transform: translateX(100%);
+		z-index: 10;
+		background: #161616;
+		transition: 0.5s cubic-bezier(0.5, 0, 1, 0.75);
 	}
 	
 	.transition4.Active {
 		transform: translateX(0);
+		opacity: 1;
 	}
 
 	div.tranSquare {
