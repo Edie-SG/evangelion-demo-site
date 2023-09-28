@@ -1,0 +1,379 @@
+body {
+    background: #001b32;
+}
+
+div.tranSquare {
+    position: fixed;
+    inset: 0;
+    --durationR: 300ms;
+    --delayR: 50ms;
+    --delayG: 0.1s;
+    --opacity: 0;
+}
+
+div.tranSquare svg {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    rotate: 180deg;
+    margin: 0;
+    fill: rgba(71, 171, 204, 0.6);
+    filter: drop-shadow(0 0 50px #161616);
+}
+
+div.tranSquare svg rect {
+    filter: drop-shadow(0 0 10px rgba(71, 171, 204, 1));
+    transform-box: fill-box;
+}
+
+/* Intro-effect */
+
+div.tranSquare svg .r13 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -99deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(0 * var(--delayR));
+}
+
+div.tranSquare svg .r14 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -288deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(1 * var(--delayR));
+}
+
+div.tranSquare svg .r15 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -50deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(2 * var(--delayR));
+}
+
+div.tranSquare svg .r16 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -139deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(3 * var(--delayR));
+}
+
+div.tranSquare svg .r17 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -86deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(4 * var(--delayR));
+}
+
+div.tranSquare svg .r18 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -146deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(5 * var(--delayR));
+}
+
+div.tranSquare svg .r19 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -151deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(6 * var(--delayR));
+}
+
+div.tranSquare svg .r20 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -119deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(7 * var(--delayR));
+}
+
+div.tranSquare svg .r21 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -58deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(8 * var(--delayR));
+}
+
+div.tranSquare svg .r22 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -240deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(9 * var(--delayR));
+}
+
+div.tranSquare svg .r23 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -359deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(10 * var(--delayR));
+}
+
+div.tranSquare svg .r24 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -49deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(11 * var(--delayR));
+}
+
+div.tranSquare svg .r1 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -103deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(12 * var(--delayR));
+}
+
+div.tranSquare svg .r2 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -13deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(13 * var(--delayR));
+}
+
+div.tranSquare svg .r3 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -238deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(14 * var(--delayR));
+}
+
+div.tranSquare svg .r4 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -32deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(15 * var(--delayR));
+}
+
+div.tranSquare svg .r5 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -320deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(16 * var(--delayR));
+}
+
+div.tranSquare svg .r6 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -44deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(17 * var(--delayR));
+}
+
+div.tranSquare svg .r7 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -137deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(18 * var(--delayR));
+}
+
+div.tranSquare svg .r8 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -138deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(19 * var(--delayR));
+}
+
+div.tranSquare svg .r9 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -176deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(20 * var(--delayR));
+}
+
+div.tranSquare svg .r10 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -108deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(21 * var(--delayR));
+}
+
+div.tranSquare svg .r11 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -196deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(22 * var(--delayR));
+}
+
+div.tranSquare svg .r12 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -20deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(23 * var(--delayR));
+}
+
+.tranSquare:hover svg rect {
+    transform: rotate3d(1, 1, 1, 0deg);
+    opacity: 1;
+}
+
+/* Out-effect */
+/* 
+.tranSquare svg rect {
+    filter: drop-shadow(0 0 10px rgba(71, 171, 204, 1));
+    transform: rotate3d(0);
+    transform-box: fill-box;
+    opacity: 1;
+}
+
+div.tranSquare:hover svg .r13 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -99deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(0 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r14 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -288deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(1 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r15 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -50deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(2 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r16 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -139deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(3 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r17 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -86deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(4 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r18 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -146deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(5 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r19 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -151deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(6 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r20 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -119deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(7 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r21 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -58deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(8 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r22 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -240deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(9 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r23 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -359deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(10 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r24 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -49deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(11 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r1 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -103deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(12 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r2 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -13deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(13 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r3 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -238deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(14 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r4 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -32deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(15 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r5 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -320deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(16 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r6 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -44deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(17 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r7 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -137deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(18 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r8 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -138deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(19 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r9 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -176deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(20 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r10 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -108deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(21 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r11 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -196deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(22 * var(--delayR));
+}
+
+div.tranSquare:hover svg .r12 {
+    opacity: var(--opacity);
+    transform: rotate3d(1, -1, 1, -20deg);
+    transform-origin: center;
+    transition: var(--durationR) ease calc(23 * var(--delayR));
+} */

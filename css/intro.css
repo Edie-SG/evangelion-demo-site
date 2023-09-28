@@ -1,0 +1,766 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;900&family=Satisfy&display=fallback');
+
+@font-face {
+	font-family: "SDGlitchRobotDemo";
+	src: url("../fonts/Sdglitchrobotdemo-GOPdO.ttf");
+}
+
+@media (min-width: 1001px) {
+
+	:root {
+        font-size: min(2vmax, 20px);
+		--width: min(3vmax, 36px);
+	}
+
+	body {
+		background: #D48529 url("../imgs/559194.jpg") center/cover fixed no-repeat;
+		position: fixed;
+		inset: 0;
+		color: rgba(255, 254, 232, 1);
+		overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+		display: flex;
+		justify-content: center;
+	}
+	
+	body::after {
+		content: "";
+		background-color: rgba(11, 11, 11, 0.3);
+		position: fixed;
+		inset: 0;
+		z-index: -2;
+	}
+	
+	main {
+		position: absolute;
+		align-self: center;
+		width: clamp(60vw, 48.5rem, 1920px);
+		height: clamp(50vh, 30rem, 70vh);
+        z-index: -1;
+        background-color: rgba(11, 11, 11, 0.7);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+        box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.1);
+		overflow: hidden;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		margin: 2.5rem 0 1.5rem 0;
+	}
+	
+	article {
+		position: absolute;
+		inset: 8rem 2rem calc(var(--width) * 5) 2rem;
+		font-size: 1.2rem;
+		overflow: scroll;
+	}
+
+	article::-webkit-scrollbar {
+		display: none;
+	}
+
+	h1 {
+		font-size: 2rem;
+		text-align: center;
+		font-family: "SDGlitchRobotDemo", sans-serif;
+		text-transform: capitalize;
+	}
+	
+	article p {
+		font-family: "Satisfy", cursive;
+		text-align: justify;
+	}
+	
+	article p.normal::first-letter {
+		margin-top: -0.3em;
+		margin-bottom: -0.3em;
+		font-size: 1.5em;
+		font-weight: 900;
+		float: left;
+	}
+	
+	article p.quote {
+		text-align: right;
+		font-style: italic;
+		margin-top: 1.5rem;
+	}
+	
+	a {
+		text-decoration: none;
+		color: rgba(255, 254, 232, 1);
+		font-family: "SDGlitchRobotDemo", sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5rem;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	
+	footer {
+		overflow: hidden;
+		--width: 10rem;
+		--height: 10rem;
+		--constant1: 0.43;
+		--constant2: 0.54;
+		--constant3: 0.6;
+	}
+	
+	a.buttonL {
+		position: absolute;
+		left: 0.5rem;
+		bottom: 1rem;
+		font-size: 1.5rem;
+		width: min-content;
+		height: min-content;
+	}
+	
+	@keyframes shadow {
+		0% {box-shadow: 0px 0px 10px rgba(255, 255, 255, 0)}
+		100% {box-shadow: 0px 0px 10px rgba(255, 255, 255, 1)}
+	}
+	
+	@keyframes tshadow {
+		0% {text-shadow:0px 0px 10px rgba(255, 255, 255, 0)}
+		100% {text-shadow:0px 0px 10px rgba(255, 255, 255, 1)}
+	}
+	
+	footer div {
+		transition: transform 0.12s ease-in;
+		translate: 0 0.2em;
+		--delay: 0.07s;
+	}
+	
+	a:hover {
+		animation: tshadow 0.8s ease-in-out 0.4s infinite alternate;
+	}
+	
+	a.buttonL:hover ~ div.left {
+		transform: rotate(0deg);
+	}
+	
+	a.buttonL:hover ~ div.left:nth-child(2) {
+		opacity: 0.9;
+	}
+	
+	a.buttonL:hover ~ div.left:nth-child(3) {
+		opacity: 0.8;
+	}
+	
+	a.buttonL:hover ~ div.left:nth-child(4) {
+		opacity: 0.7;
+		animation: shadow 0.8s ease-in-out 0.5s infinite alternate;
+	}
+	
+	a.buttonL:hover ~ div.leftF {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	
+	div.left:nth-child(2) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant1) * var(--width));
+		height: calc(var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 0 100% 0 0;
+		z-index: -1;
+		transform: rotate(-90deg);
+		transform-origin: 0% 100%;
+		opacity: 0;
+		transition-delay: calc(2 * var(--delay));
+	}
+	
+	div.left:nth-child(3) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant2) * var(--width));
+		height: calc(var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		z-index: -2;
+		transform: rotate(-90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.left:nth-child(4) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant3) * var(--width));
+		height: calc(var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		z-index: -3;
+		transform: rotate(-90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.leftF:nth-child(5) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant1) * var(--width));
+		height: calc(var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 0 100% 0 0;
+		z-index: -1;
+		transform: rotate(90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0.9;
+	}
+	
+	div.leftF:nth-child(6) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant2) * var(--width));
+		height: calc(var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		z-index: -2;
+		transform: rotate(90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0.8;
+	}
+	
+	div.leftF:nth-child(7) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant3) * var(--width));
+		height: calc(var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		box-shadow: 0px -0px 8px rgba(151, 165, 175, 0);
+		z-index: -3;
+		transform: rotate(90deg);
+		transform-origin: 0% 100%;
+		opacity: 0.7;
+		transition-delay: calc(2 * var(--delay));
+	}
+	
+	a.buttonR {
+		font-size: 1.1rem;
+		position: absolute;
+		right: 0.5rem;
+		bottom: 0.5rem;
+		width: 6.5em;
+		height: min-content;
+		line-height: 1.1;
+	}
+	
+	a.buttonR:hover ~ div.right {
+		transform: rotate(0deg);
+	}
+	
+	a.buttonR:hover ~ div.right:nth-child(9) {
+		opacity: 0.9;
+	}
+	
+	a.buttonR:hover ~ div.right:nth-child(10) {
+		opacity: 0.8;
+	}
+	
+	a.buttonR:hover ~ div.right:nth-child(11) {
+		opacity: 0.7;
+		animation: shadow 0.8s ease-in-out 0.5s infinite alternate;
+	}
+	
+	a.buttonR:hover ~ div.rightF {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	
+	div.right:nth-child(9) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant1) * var(--width));
+		height: calc(1.4 * var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 100% 0 0 0;
+		z-index: -1;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+		opacity: 0;
+		transition-delay: calc(2 * var(--delay));
+	}
+	
+	div.right:nth-child(10) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant2) * var(--width));
+		height: calc(1.4 * var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -2;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.right:nth-child(11) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant3) * var(--width));
+		height: calc(1.4 * var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -3;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.rightF:nth-child(12) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant1) * var(--width));
+		height: calc(1.4 * var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 100% 0 0 0;
+		z-index: -1;
+		transform: rotate(-90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0.9;
+	}
+	
+	div.rightF:nth-child(13) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant2) * var(--width));
+		height: calc(1.4 * var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -2;
+		transform: rotate(-90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0.8;
+	}
+	
+	div.rightF:nth-child(14) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant3) * var(--width));
+		height: calc(1.4 * var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -3;
+		transform: rotate(-90deg);
+		transform-origin: 100% 100%;
+		opacity: 0.7;
+		transition-delay: calc(2 * var(--delay));
+	}
+}
+
+@media (max-width: 1000px) {
+
+	:root {
+        font-size: min(4.5vw, 20px);
+		--width: min(3vmax, 36px);
+	}
+
+	body {
+		background: #D48529 url("../imgs/559194.jpg") center/cover fixed no-repeat;
+		position: fixed;
+		inset: 0;
+		color: rgba(255, 254, 232, 1);
+		overflow-wrap: break-word;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+		display: flex;
+		justify-content: center;
+	}
+	
+	body::after {
+		content: "";
+		background-color: rgba(11, 11, 11, 0.3);
+		position: fixed;
+		inset: 0;
+		z-index: -2;
+	}
+	
+	main {
+		position: absolute;
+		align-self: center;
+		width: clamp(60vw, 30rem, (100vw - 2rem));
+		height: clamp(50vh, 41rem, (100vh - 2rem));
+        z-index: -1;
+        background-color: rgba(11, 11, 11, 0.7);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        border-radius: 1rem;
+        box-shadow: 1px 1px 10px 2px rgba(255, 255, 255, 0.1);
+		overflow: hidden;
+	}
+
+	header {
+		display: flex;
+		justify-content: center;
+		margin: 2.5rem 0 1.5rem 0;
+	}
+	
+	article {
+		position: absolute;
+		inset: 6rem 1rem calc(var(--width) * 5) 1rem;
+		font-size: 1.1rem;
+		overflow: scroll;
+	}
+
+	article::-webkit-scrollbar {
+		display: none;
+	}
+
+	h1 {
+		font-size:  1.4rem;
+		text-align: center;
+		font-family: "SDGlitchRobotDemo", sans-serif;
+		text-transform: capitalize;
+	}
+	
+	article p {
+		font-family: "Satisfy", cursive;
+		text-align: justify;
+	}
+	
+	article p.normal::first-letter {
+		margin-top: -0.3em;
+		margin-bottom: -0.3em;
+		font-size: 1.5em;
+		font-weight: 900;
+		float: left;
+	}
+	
+	article p.quote {
+		text-align: right;
+		font-style: italic;
+		margin-top: 1.5rem;
+	}
+	
+	a {
+		text-decoration: none;
+		color: rgba(255, 254, 232, 1);
+		font-family: "SDGlitchRobotDemo", sans-serif;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5rem;
+		box-sizing: border-box;
+		text-align: center;
+	}
+	
+	footer {
+		overflow: hidden;
+		--width: 9rem;
+		--height: 9rem;
+		--constant1: 0.43;
+		--constant2: 0.54;
+		--constant3: 0.6;
+	}
+	
+	a.buttonL {
+		position: absolute;
+		left: 0.2rem;
+		bottom: 1rem;
+		font-size: 1.3rem;
+		width: min-content;
+		height: min-content;
+	}
+	
+	@keyframes shadow {
+		0% {box-shadow: 0px 0px 10px rgba(255, 255, 255, 0)}
+		100% {box-shadow: 0px 0px 10px rgba(255, 255, 255, 1)}
+	}
+	
+	@keyframes tshadow {
+		0% {text-shadow:0px 0px 10px rgba(255, 255, 255, 0)}
+		100% {text-shadow:0px 0px 10px rgba(255, 255, 255, 1)}
+	}
+	
+	footer div {
+		transition: transform 0.12s ease-in;
+		translate: 0 0.2em;
+		--delay: 0.07s;
+	}
+	
+	a:hover {
+		animation: tshadow 0.8s ease-in-out 0.4s infinite alternate;
+	}
+	
+	a.buttonL:hover ~ div.left {
+		transform: rotate(0deg);
+	}
+	
+	a.buttonL:hover ~ div.left:nth-child(2) {
+		opacity: 0.9;
+	}
+	
+	a.buttonL:hover ~ div.left:nth-child(3) {
+		opacity: 0.8;
+	}
+	
+	a.buttonL:hover ~ div.left:nth-child(4) {
+		opacity: 0.7;
+		animation: shadow 0.8s ease-in-out 0.5s infinite alternate;
+	}
+	
+	a.buttonL:hover ~ div.leftF {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	
+	div.left:nth-child(2) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant1) * var(--width));
+		height: calc(var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 0 100% 0 0;
+		z-index: -1;
+		transform: rotate(-90deg);
+		transform-origin: 0% 100%;
+		opacity: 0;
+		transition-delay: calc(2 * var(--delay));
+	}
+	
+	div.left:nth-child(3) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant2) * var(--width));
+		height: calc(var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		z-index: -2;
+		transform: rotate(-90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.left:nth-child(4) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant3) * var(--width));
+		height: calc(var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		z-index: -3;
+		transform: rotate(-90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.leftF:nth-child(5) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant1) * var(--width));
+		height: calc(var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 0 100% 0 0;
+		z-index: -1;
+		transform: rotate(90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0.9;
+	}
+	
+	div.leftF:nth-child(6) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant2) * var(--width));
+		height: calc(var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		z-index: -2;
+		transform: rotate(90deg);
+		transform-origin: 0% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0.8;
+	}
+	
+	div.leftF:nth-child(7) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		width: calc(var(--constant3) * var(--width));
+		height: calc(var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 0 100% 0 0;
+		box-shadow: 0px -0px 8px rgba(151, 165, 175, 0);
+		z-index: -3;
+		transform: rotate(90deg);
+		transform-origin: 0% 100%;
+		opacity: 0.7;
+		transition-delay: calc(2 * var(--delay));
+	}
+	
+	a.buttonR {
+		font-size: 1rem;
+		position: absolute;
+		right: 0.2rem;
+		bottom: 0.5rem;
+		width: 7.5em;
+		height: min-content;
+		line-height: 1.1;
+	}
+	
+	a.buttonR:hover ~ div.right {
+		transform: rotate(0deg);
+	}
+	
+	a.buttonR:hover ~ div.right:nth-child(9) {
+		opacity: 0.9;
+	}
+	
+	a.buttonR:hover ~ div.right:nth-child(10) {
+		opacity: 0.8;
+	}
+	
+	a.buttonR:hover ~ div.right:nth-child(11) {
+		opacity: 0.7;
+		animation: shadow 0.8s ease-in-out 0.5s infinite alternate;
+	}
+	
+	a.buttonR:hover ~ div.rightF {
+		transform: rotate(0deg);
+		opacity: 0;
+	}
+	
+	div.right:nth-child(9) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant1) * var(--width));
+		height: calc(1.4 * var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 100% 0 0 0;
+		z-index: -1;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+		opacity: 0;
+		transition-delay: calc(2 * var(--delay));
+	}
+	
+	div.right:nth-child(10) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant2) * var(--width));
+		height: calc(1.4 * var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -2;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.right:nth-child(11) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant3) * var(--width));
+		height: calc(1.4 * var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -3;
+		transform: rotate(90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0;
+	}
+	
+	div.rightF:nth-child(12) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant1) * var(--width));
+		height: calc(1.4 * var(--constant1) * var(--height));
+		background: #000 url("../imgs/wp3630777-texture.jpg");
+		border-radius: 100% 0 0 0;
+		z-index: -1;
+		transform: rotate(-90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(4 * var(--delay));
+		opacity: 0.9;
+	}
+	
+	div.rightF:nth-child(13) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant2) * var(--width));
+		height: calc(1.4 * var(--constant2) * var(--height));
+		background: #555 url("../imgs/iron-metal-frame-background-texture.jpg") center;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -2;
+		transform: rotate(-90deg);
+		transform-origin: 100% 100%;
+		transition-delay: calc(3 * var(--delay));
+		opacity: 0.8;
+	}
+	
+	div.rightF:nth-child(14) {
+		position: fixed;
+		right: 0;
+		bottom: 0;
+		width: calc(1.4 * var(--constant3) * var(--width));
+		height: calc(1.4 * var(--constant3) * var(--height));
+		background: #999 url("../imgs/reflective-chrome-metal-foil-free.jpg") center no-repeat;
+		background-size: 200%;
+		border-radius: 100% 0 0 0;
+		z-index: -3;
+		transform: rotate(-90deg);
+		transform-origin: 100% 100%;
+		opacity: 0.7;
+		transition-delay: calc(2 * var(--delay));
+	}
+}
+
+/** {
+	border: 1px solid;
+}*/
