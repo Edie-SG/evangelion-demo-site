@@ -315,9 +315,9 @@
 		z-index: -1;
 	}
 	
-	nav li.tab:is(:hover, :focus, .is-active) a::before {
+	/* nav li.tab:is(:hover, :focus, .is-active) a::before {
 		filter: blur(0.4rem);
-	}
+	} */
 
 	.tabs .tab.hide {
 		display: none;
@@ -1914,9 +1914,9 @@
 		z-index: -1;
 	}
 	
-	nav li.tab:is(:hover, :focus, .is-active) a::before {
+	/* nav li.tab:is(:hover, :focus, .is-active) a::before {
 		filter: blur(0.4rem);
-	}
+	} */
 
 	.tabs .tab.hide {
 		display: none;

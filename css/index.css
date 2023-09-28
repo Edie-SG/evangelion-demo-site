@@ -422,7 +422,7 @@ h1 span.two::before {
 	margin-left: 1.05em;
 	width: 2.8em;
 	height: 0.08em;
-	background: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.6);
 	transform: skew(-45deg);
 }
 
