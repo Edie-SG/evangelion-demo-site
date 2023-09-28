@@ -249,7 +249,6 @@
 
 	body {
 		background: #1A2F64 url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat fixed;
-		overflow: hidden;
 		position: fixed;
 		inset: 0;
 		margin: 0;
@@ -349,7 +348,8 @@
 
 	h1 a {
 		text-decoration: none;
-		color: rgba(255, 255, 255, 0.6);
+		color: rgb(255, 255, 255);
+		opacity: 0.6;
 	}
 
 	.one {
@@ -484,7 +484,6 @@
 
 	body {
 		background: #1A2F64 url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat fixed;
-		overflow: hidden;
 		position: fixed;
 		inset: 0;
 		margin: 0;
@@ -585,7 +584,8 @@
 
 	h1 a {
 		text-decoration: none;
-		color: rgba(255, 255, 255, 0.6);
+		color: rgb(255, 255, 255);
+		opacity: 0.6;
 	}
 
 	.one {
