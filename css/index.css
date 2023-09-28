@@ -342,6 +342,7 @@
 		margin-right: 0.5rem;
 		justify-content: center;
 		font-family: "Jockey One", sans-serif;
+		font-kerning: normal;
 		text-align: center;
 		font-variant: small-caps;
 	}
@@ -580,6 +581,7 @@
 		font-family: "Jockey One", sans-serif;
 		text-align: center;
 		font-variant: small-caps;
+		font-kerning: normal;
 		color: rgba(255, 255, 255, 0.6);
 	}
 
@@ -713,7 +715,3 @@
 		color: rgba(255, 255, 255, 0.8);
 	}
 }
-
-/* * {
-	border: 1px solid #ffffff;
-} */
