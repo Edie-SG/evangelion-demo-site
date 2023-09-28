@@ -31,7 +31,7 @@
         margin: 0;
         padding: 0;
         z-index: -100;
-        background: #142128 url("../imgs/aboutBackground.jpg") center/cover fixed no-repeat;
+        background: #142128 url("../imgs/about-background.jpg") center/cover fixed no-repeat;
         display: flex;
         align-items: center;
     }
@@ -205,7 +205,7 @@
         margin: 0;
         padding: 0;
         z-index: -100;
-        background: #142128 url("../imgs/aboutBackground.jpg") center/cover fixed no-repeat;
+        background: #142128 url("../imgs/about-background.jpg") center/cover fixed no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;

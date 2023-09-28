@@ -5,89 +5,6 @@
 	src: url("../fonts/Sdglitchrobotdemo-GOPdO.ttf");
 }
 
-body {
-	background: #1A2F64 url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat fixed;
-	overflow: hidden;
-	position: fixed;
-	inset: 0;
-	margin: 0;
-	padding: 0;
-}
-
-body::after {
-	content: "";
-	position: absolute;
-	background-color: #000000;
-	inset: 0;
-	opacity: 0.6;
-	z-index: -10;
-}
-
-/* Glitch effect */
-
-div {
-	z-index: -1;
-	opacity: 0;
-	position: absolute;
-	background: url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat;
-	inset: 0px;
-	--gap-horizontal: 10px;
-	--gap-vertical: 5px;
-	--time-anime: 8s;
-	--delay-anime: 0.1s;
-	--blend-mode-1: lighten;
-	--blend-mode-2: none;
-	--blend-mode-3: lighten;
-	--blend-mode-4: none;
-	--blend-mode-5: lighten;
-	--blend-color-1: rgba(191, 64, 66, 0.3);
-	--blend-color-2: transparent;
-	--blend-color-3: rgba(71, 171, 204, 0.3);
-	--blend-color-4: transparent;
-	--blend-color-5: rgba(255, 246, 0, 0.3);
-}
-
-div.glitch1 {
-	background-color: var(--blend-color-1);
-	background-blend-mode: var(--blend-mode-1);
-}
-
-div.glitch2 {
-	background-color: var(--blend-color-2);
-	background-blend-mode: var(--blend-mode-2);
-}
-
-div.glitch3 {
-	background-color: var(--blend-color-3);
-	background-blend-mode: var(--blend-mode-3);
-}
-
-div.glitch4 {
-	background-color: var(--blend-color-4);
-	background-blend-mode: var(--blend-mode-4);
-}
-
-div.glitch5 {
-	background-color: var(--blend-color-5);
-	background-blend-mode: var(--blend-mode-5);
-}
-
-h1:hover ~ div.glitch1 {
-	animation: glitch-1 var(--time-anime) ease-in var(--delay-anime);
-}
-h1:hover ~ div.glitch2 {
-	animation: glitch-y var(--time-anime) ease-in var(--delay-anime);
-}
-h1:hover ~ div.glitch3 {
-	animation: glitch-3 var(--time-anime) ease-in var(--delay-anime);
-}
-h1:hover ~ div.glitch4 {
-	animation: glitch-x var(--time-anime) ease-in var(--delay-anime);
-}
-h1:hover ~ div.glitch5 {
-	animation: glitch-2 var(--time-anime) ease-in var(--delay-anime);
-}
-
 @keyframes glitch-1 {
 	0% {
 		opacity: 0;
@@ -318,34 +235,121 @@ h1:hover ~ div.glitch5 {
 	}
 }
 
-/* Main style */
-
-
-header {
-	display: flex;
-	justify-content: center;
+@keyframes opa {
+	0% {opacity: 0}
+	100% {opacity: 1}
 }
 
-h1 {
-	position: fixed;
-	display: flex;
-	bottom: 50%;
-	margin-right: 1%;
-	justify-content: center;
-	font-family: "Jockey One", sans-serif;
-	text-align: center;
-	font-variant: small-caps;
-}
-
-h1 a {
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.6);
-}
 
 @media (min-width: 768px) {
 	
 	:root {
 		--fontSL: min(7vmax, 84px);
+	}
+
+	body {
+		background: #1A2F64 url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat fixed;
+		overflow: hidden;
+		position: fixed;
+		inset: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body::after {
+		content: "";
+		position: absolute;
+		background-color: #000000;
+		inset: 0;
+		opacity: 0.6;
+		z-index: -10;
+	}
+	
+	/* Glitch effect */
+	
+	div {
+		z-index: -1;
+		opacity: 0;
+		position: absolute;
+		background: url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat;
+		inset: 0px;
+		--gap-horizontal: 10px;
+		--gap-vertical: 5px;
+		--time-anime: 8s;
+		--delay-anime: 0.1s;
+		--blend-mode-1: lighten;
+		--blend-mode-2: none;
+		--blend-mode-3: lighten;
+		--blend-mode-4: none;
+		--blend-mode-5: lighten;
+		--blend-color-1: rgba(191, 64, 66, 0.3);
+		--blend-color-2: transparent;
+		--blend-color-3: rgba(71, 171, 204, 0.3);
+		--blend-color-4: transparent;
+		--blend-color-5: rgba(255, 246, 0, 0.3);
+	}
+	
+	div.glitch1 {
+		background-color: var(--blend-color-1);
+		background-blend-mode: var(--blend-mode-1);
+	}
+	
+	div.glitch2 {
+		background-color: var(--blend-color-2);
+		background-blend-mode: var(--blend-mode-2);
+	}
+	
+	div.glitch3 {
+		background-color: var(--blend-color-3);
+		background-blend-mode: var(--blend-mode-3);
+	}
+	
+	div.glitch4 {
+		background-color: var(--blend-color-4);
+		background-blend-mode: var(--blend-mode-4);
+	}
+	
+	div.glitch5 {
+		background-color: var(--blend-color-5);
+		background-blend-mode: var(--blend-mode-5);
+	}
+	
+	h1:hover ~ div.glitch1 {
+		animation: glitch-1 var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch2 {
+		animation: glitch-y var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch3 {
+		animation: glitch-3 var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch4 {
+		animation: glitch-x var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch5 {
+		animation: glitch-2 var(--time-anime) ease-in var(--delay-anime);
+	}
+
+	/* Main style */
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	h1 {
+		position: fixed;
+		display: flex;
+		bottom: 50%;
+		margin-right: 1%;
+		justify-content: center;
+		font-family: "Jockey One", sans-serif;
+		text-align: center;
+		font-variant: small-caps;
+	}
+
+	h1 a {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.6);
 	}
 
 	.one {
@@ -360,12 +364,115 @@ h1 a {
 		font-size: calc(3 * var(--fontSL));
 	}
 
-	nav a {
-		font-size: min(3vmax,36px);
+	h1 span.one {
+		margin-bottom: 1.5em;
+		margin-left: 0.9em;
+		line-height: 1em;
+		z-index: 10;
 	}
-
+	
+	h1 span.two {
+		position: absolute;
+		bottom: 0;
+		line-height: 1em;
+	}
+	
+	h1 span.two::first-letter {
+		font-style: italic;
+		margin-right: 0.08em;
+	}
+	
+	h1 span.two::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 0.65em;
+		margin-left: 1.05em;
+		width: 2.8em;
+		height: 0.08em;
+		background-color: rgba(255, 255, 255, 0.6);
+		transform: skew(-45deg);
+	}
+	
+	h1:hover a {
+		color: rgba(255, 255, 255, 0.95);
+		transition: 0.1s ease-out;
+		text-shadow:
+			6px -6px rgba(191, 64, 66, 0.9),
+			12px -12px rgba(64, 179, 191, 0.85),
+			18px -18px rgba(255, 246, 0, 0.8);
+	}
+	
+	h1:hover span.two:before {
+		background-color: rgba(255, 255, 255, 0.95);
+		transition: 0.1s ease-out;
+		box-shadow: 
+			6px -6px rgba(191, 64, 66, 0.9),
+			12px -12px rgba(64, 179, 191, 0.85),
+			18px -18px rgba(255, 246, 0, 0.8);;
+	}
+	
 	article {
 		font-size: min(2.2vmax, 26.4px);
+		position: fixed;
+		inset: 48% 0% auto 0%;
+		color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		margin: 0px;
+		font-family: "Satisfy", cursive;
+	}
+	
+	article p {
+		margin: 0px;
+	}
+	
+	nav {
+		position: fixed;
+		top: 58%;
+	}
+	
+	nav a {
+		font-size: min(3vmax,36px);
+		display: flex;
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.8);
+		justify-content: center;
+		padding: 0.5em 0;
+		margin: 0.8em 0;
+		font-family: "SDGlitchRobotDemo", sans-serif;
+		text-transform: capitalize;
+		text-align: center;
+	}
+	
+	nav a::before {
+		content: url("../imgs/arrow_icon.svg");
+		width: 0.7em;
+		margin-right: 1em;
+		margin-top: 0.2em;
+		font-size: 0.5em;
+		opacity: 0;
+	}
+	
+	nav a::after {
+		content: url("../imgs/arrow_icon2.svg");
+		width: 0.7em;
+		margin-left: 1em;
+		margin-top: 0.2em;
+		font-size: 0.5em;
+		opacity: 0;
+	}
+	
+	nav a:hover::before, nav a:hover::after {
+		animation: opa 1s infinite alternate-reverse;
+	}
+	
+	footer {
+		position: fixed;
+		inset: auto 0% 0% 0%;
+		text-align: center;
+		font-family: Orbitron, sans-serif;
+		font-size: min(1.2vmax, 14px);
+		color: rgba(255, 255, 255, 0.8);
 	}
 }
 
@@ -373,6 +480,112 @@ h1 a {
 	
 	:root {
 		--fontS: min(5.4vmax, 46px);
+	}
+
+	body {
+		background: #1A2F64 url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat fixed;
+		overflow: hidden;
+		position: fixed;
+		inset: 0;
+		margin: 0;
+		padding: 0;
+	}
+	
+	body::after {
+		content: "";
+		position: absolute;
+		background-color: #000000;
+		inset: 0;
+		opacity: 0.6;
+		z-index: -10;
+	}
+	
+	/* Glitch effect */
+	
+	div {
+		z-index: -1;
+		opacity: 0;
+		position: absolute;
+		background: url("../imgs/4575169-cityscape-night-guilty-crown-anime-tokyo.jpg") center/cover no-repeat;
+		inset: 0px;
+		--gap-horizontal: 10px;
+		--gap-vertical: 5px;
+		--time-anime: 8s;
+		--delay-anime: 0.1s;
+		--blend-mode-1: lighten;
+		--blend-mode-2: none;
+		--blend-mode-3: lighten;
+		--blend-mode-4: none;
+		--blend-mode-5: lighten;
+		--blend-color-1: rgba(191, 64, 66, 0.3);
+		--blend-color-2: transparent;
+		--blend-color-3: rgba(71, 171, 204, 0.3);
+		--blend-color-4: transparent;
+		--blend-color-5: rgba(255, 246, 0, 0.3);
+	}
+	
+	div.glitch1 {
+		background-color: var(--blend-color-1);
+		background-blend-mode: var(--blend-mode-1);
+	}
+	
+	div.glitch2 {
+		background-color: var(--blend-color-2);
+		background-blend-mode: var(--blend-mode-2);
+	}
+	
+	div.glitch3 {
+		background-color: var(--blend-color-3);
+		background-blend-mode: var(--blend-mode-3);
+	}
+	
+	div.glitch4 {
+		background-color: var(--blend-color-4);
+		background-blend-mode: var(--blend-mode-4);
+	}
+	
+	div.glitch5 {
+		background-color: var(--blend-color-5);
+		background-blend-mode: var(--blend-mode-5);
+	}
+	
+	h1:hover ~ div.glitch1 {
+		animation: glitch-1 var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch2 {
+		animation: glitch-y var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch3 {
+		animation: glitch-3 var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch4 {
+		animation: glitch-x var(--time-anime) ease-in var(--delay-anime);
+	}
+	h1:hover ~ div.glitch5 {
+		animation: glitch-2 var(--time-anime) ease-in var(--delay-anime);
+	}
+
+	/* Main style */
+	header {
+		display: flex;
+		justify-content: center;
+	}
+
+	h1 {
+		position: fixed;
+		display: flex;
+		bottom: 50%;
+		margin-right: 1%;
+		justify-content: center;
+		font-family: "Jockey One", sans-serif;
+		text-align: center;
+		font-variant: small-caps;
+		color: rgba(255, 255, 255, 0.6);
+	}
+
+	h1 a {
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.6);
 	}
 
 	.one {
@@ -387,127 +600,116 @@ h1 a {
 		font-size: calc(3 * var(--fontS));
 	}
 
-	nav a {
-		font-size: min(3vmax,36px);
+	h1 span.one {
+		margin-bottom: 1.5em;
+		margin-left: 0.9em;
+		line-height: 1em;
+		z-index: 10;
 	}
-
+	
+	h1 span.two {
+		position: absolute;
+		bottom: 0;
+		line-height: 1em;
+	}
+	
+	h1 span.two::first-letter {
+		font-style: italic;
+		margin-right: 0.08em;
+	}
+	
+	h1 span.two::before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		margin-bottom: 0.65em;
+		margin-left: 1.05em;
+		width: 2.8em;
+		height: 0.08em;
+		background-color: rgba(255, 255, 255, 0.6);
+		transform: skew(-45deg);
+	}
+	
+	h1:hover a {
+		color: rgba(255, 255, 255, 0.95);
+		transition: 0.1s ease-out;
+		text-shadow:
+			6px -6px rgba(191, 64, 66, 0.9),
+			12px -12px rgba(64, 179, 191, 0.85),
+			18px -18px rgba(255, 246, 0, 0.8);
+	}
+	
+	h1:hover span.two:before {
+		background-color: rgba(255, 255, 255, 0.95);
+		transition: 0.1s ease-out;
+		box-shadow: 
+			6px -6px rgba(191, 64, 66, 0.9),
+			12px -12px rgba(64, 179, 191, 0.85),
+			18px -18px rgba(255, 246, 0, 0.8);;
+	}
+	
 	article {
 		font-size: min(1.7vmax, 14.5px);
+		position: fixed;
+		inset: 48% 0% auto 0%;
+		color: rgba(255, 255, 255, 0.8);
+		text-align: center;
+		margin: 0px;
+		font-family: "Satisfy", cursive;
 	}
-}
-
-h1 span.one {
-	margin-bottom: 1.5em;
-	margin-left: 0.9em;
-	line-height: 1em;
-	z-index: 10;
-}
-
-h1 span.two {
-	position: absolute;
-	bottom: 0;
-	line-height: 1em;
-}
-
-h1 span.two::first-letter {
-	font-style: italic;
-	margin-right: 0.08em;
-}
-
-h1 span.two::before {
-	content: "";
-	position: absolute;
-	bottom: 0;
-	margin-bottom: 0.65em;
-	margin-left: 1.05em;
-	width: 2.8em;
-	height: 0.08em;
-	background-color: rgba(255, 255, 255, 0.6);
-	transform: skew(-45deg);
-}
-
-h1:hover a {
-	color: rgba(255, 255, 255, 0.95);
-	transition: 0.1s ease-out;
-	text-shadow:
-		6px -6px rgba(191, 64, 66, 0.9),
-		12px -12px rgba(64, 179, 191, 0.85),
-		18px -18px rgba(255, 246, 0, 0.8);
-}
-
-h1:hover span.two:before {
-	background-color: rgba(255, 255, 255, 0.95);
-	transition: 0.1s ease-out;
-	box-shadow: 
-		6px -6px rgba(191, 64, 66, 0.9),
-		12px -12px rgba(64, 179, 191, 0.85),
-		18px -18px rgba(255, 246, 0, 0.8);;
-}
-
-article {
-	position: fixed;
-	inset: 48% 0% auto 0%;
-	color: rgba(255, 255, 255, 0.8);
-	text-align: center;
-	margin: 0px;
-	font-family: "Satisfy", cursive;
-}
-
-article p {
-	margin: 0px;
-}
-
-nav {
-	position: fixed;
-	top: 58%;
-}
-
-nav a {
-	display: flex;
-	text-decoration: none;
-	color: rgba(255, 255, 255, 0.8);
-	justify-content: center;
-	padding: 0.5em 0;
-	margin: 0.8em 0;
-	font-family: "SDGlitchRobotDemo", sans-serif;
-	text-transform: capitalize;
-	text-align: center;
-}
-
-nav a::before {
-	content: url("../imgs/arrow_icon.svg");
-	width: 0.7em;
-	margin-right: 1em;
-	margin-top: 0.2em;
-	font-size: 0.5em;
-	opacity: 0;
-}
-
-nav a::after {
-	content: url("../imgs/arrow_icon2.svg");
-	width: 0.7em;
-	margin-left: 1em;
-	margin-top: 0.2em;
-	font-size: 0.5em;
-	opacity: 0;
-}
-
-nav a:hover::before, nav a:hover::after {
-	animation: opa 1s infinite alternate-reverse;
-}
-
-@keyframes opa {
-	0% {opacity: 0}
-	100% {opacity: 1}
-}
-
-footer {
-	position: fixed;
-	inset: auto 0% 0% 0%;
-	text-align: center;
-	font-family: Orbitron, sans-serif;
-	font-size: min(1.2vmax, 14px);
-	color: rgba(255, 255, 255, 0.8);
+	
+	article p {
+		margin: 0px;
+	}
+	
+	nav {
+		position: fixed;
+		top: 58%;
+	}
+	
+	nav a {
+		font-size: min(3vmax,36px);
+		display: flex;
+		text-decoration: none;
+		color: rgba(255, 255, 255, 0.8);
+		justify-content: center;
+		padding: 0.5em 0;
+		margin: 0.8em 0;
+		font-family: "SDGlitchRobotDemo", sans-serif;
+		text-transform: capitalize;
+		text-align: center;
+	}
+	
+	nav a::before {
+		content: url("../imgs/arrow_icon.svg");
+		width: 0.7em;
+		margin-right: 1em;
+		margin-top: 0.2em;
+		font-size: 0.5em;
+		opacity: 0;
+	}
+	
+	nav a::after {
+		content: url("../imgs/arrow_icon2.svg");
+		width: 0.7em;
+		margin-left: 1em;
+		margin-top: 0.2em;
+		font-size: 0.5em;
+		opacity: 0;
+	}
+	
+	nav a:hover::before, nav a:hover::after {
+		animation: opa 1s infinite alternate-reverse;
+	}
+	
+	footer {
+		position: fixed;
+		inset: auto 0% 0% 0%;
+		text-align: center;
+		font-family: Orbitron, sans-serif;
+		font-size: min(1.2vmax, 14px);
+		color: rgba(255, 255, 255, 0.8);
+	}
 }
 
 /* * {
