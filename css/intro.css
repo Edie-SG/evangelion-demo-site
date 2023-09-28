@@ -5,7 +5,7 @@
 	src: url("../fonts/Sdglitchrobotdemo-GOPdO.ttf");
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 768px) {
 
 	:root {
         font-size: min(2vmax, 20px);
@@ -13,7 +13,7 @@
 	}
 
 	body {
-		background: #D48529 url("../imgs/559194.jpg") center/cover fixed no-repeat;
+		background: #d48429b5 url("../imgs/559194.jpg") center/cover fixed no-repeat;
 		position: fixed;
 		inset: 0;
 		color: rgba(255, 254, 232, 1);
@@ -383,7 +383,7 @@
 	}
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
 
 	:root {
         font-size: min(4.5vw, 20px);
@@ -391,7 +391,7 @@
 	}
 
 	body {
-		background: #D48529 url("../imgs/559194.jpg") center/cover fixed no-repeat;
+		background: #d48429b5 url("../imgs/559194.jpg") center/cover fixed no-repeat;
 		position: fixed;
 		inset: 0;
 		color: rgba(255, 254, 232, 1);

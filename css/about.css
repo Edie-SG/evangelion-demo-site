@@ -15,7 +15,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 767px) {
     
     :root {
         font-size: min(4.5vw, 20px);
@@ -29,7 +29,7 @@
         inset: 0;
         margin: 0;
         padding: 0;
-        background: #142128 url("../imgs/about-background.jpg") center/cover fixed no-repeat;
+        background: #161616 url("../imgs/about-background.jpg") center/cover fixed no-repeat;
         display: flex;
         align-items: center;
     }
@@ -187,7 +187,7 @@
     }
 }
 
-@media (min-width: 1001px) {
+@media (min-width: 768px) {
 
     :root {
         font-size: min(2vmax, 20px);
@@ -202,7 +202,7 @@
         margin: 0;
         padding: 0;
         z-index: -100;
-        background: #142128 url("../imgs/about-background.jpg") center/cover fixed no-repeat;
+        background: #161616 url("../imgs/about-background.jpg") center/cover fixed no-repeat;
         display: flex;
         justify-content: center;
         align-items: center;
