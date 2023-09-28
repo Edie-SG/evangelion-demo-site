@@ -244,7 +244,7 @@
 @media (min-width: 768px) {
 	
 	:root {
-		--fontSL: min(7vmax, 84px);
+		font-size: min(7vmax, 84px);
 	}
 
 	body {
@@ -339,11 +339,12 @@
 		position: fixed;
 		display: flex;
 		bottom: 50%;
-		margin-right: 0.5rem;
+		margin-top: 0;
+		margin-bottom: 0.2rem;
+		margin-right: 1%;
 		justify-content: center;
 		font-family: "Jockey One", sans-serif;
 		letter-spacing: 0px;
-		line-height: 0.92;
 		text-align: center;
 		font-variant: small-caps;
 	}
@@ -354,33 +355,25 @@
 		opacity: 0.6;
 	}
 
-	.one {
-		font-size: var(--fontSL);
-	}
-
-	.two {
-		font-size: calc(2 * var(--fontSL));
-	}
-
-	.two::first-letter {
-		font-size: calc(3 * var(--fontSL));
-	}
-
 	h1 span.one {
 		margin-bottom: 1.5em;
 		margin-left: 0.9em;
 		line-height: 1em;
+		font-size: 1rem;
 		z-index: 10;
 	}
 	
 	h1 span.two {
 		position: absolute;
 		bottom: 0;
+		font-size: 2rem;
+		line-height: 1em;
 	}
 	
 	h1 span.two::first-letter {
 		font-style: italic;
 		margin-right: 0.08em;
+		font-size: 3rem;
 	}
 	
 	h1 span.two::before {
@@ -481,7 +474,7 @@
 @media (max-width: 767px) {
 	
 	:root {
-		--fontS: min(5.4vmax, 46px);
+		font-size: min(5.4vmax, 46px);
 	}
 
 	body {
@@ -576,7 +569,9 @@
 		position: fixed;
 		display: flex;
 		bottom: 50%;
-		margin-right: 0.5rem;
+		margin-top: 0;
+		margin-bottom: 0.4rem;
+		margin-right: 1%;
 		justify-content: center;
 		font-family: "Jockey One", sans-serif;
 		text-align: center;
@@ -590,22 +585,11 @@
 		opacity: 0.6;
 	}
 
-	.one {
-		font-size: var(--fontS);
-	}
-
-	.two {
-		font-size: calc(2 * var(--fontS));
-	}
-
-	.two::first-letter {
-		font-size: calc(3 * var(--fontS));
-	}
-
 	h1 span.one {
 		margin-bottom: 1.5em;
 		margin-left: 0.9em;
 		line-height: 1em;
+		font-size: 1rem;
 		z-index: 10;
 	}
 	
@@ -613,11 +597,13 @@
 		position: absolute;
 		bottom: 0;
 		line-height: 1em;
+		font-size: 2rem;
 	}
 	
 	h1 span.two::first-letter {
 		font-style: italic;
 		margin-right: 0.08em;
+		font-size: 3rem;
 	}
 	
 	h1 span.two::before {
