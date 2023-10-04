@@ -132,7 +132,7 @@ function syncRate(PL, t1) {
 }
 
 function concurrentProcedure(progress0, progressHeight, t1) {
-	let refreshLoadNumber = setInterval(() => readHeights(progress0, progressHeight), 80);
+	let refreshLoadNumber = setInterval(() => readHeights(progress0, progressHeight), 200);
 	setTimeout (() => {
 		clearInterval(refreshLoadNumber);
 	}, t1);

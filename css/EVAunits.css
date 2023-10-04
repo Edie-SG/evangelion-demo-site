@@ -463,6 +463,8 @@
 
 	.detail th {
 		text-align: right;
+		width: max-content;
+		overflow-wrap: normal;
 	}
 
 	.detail th, .detail td {
