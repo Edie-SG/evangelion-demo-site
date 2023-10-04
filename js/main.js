@@ -1,4 +1,5 @@
-window.onload = () => {
+["load", "hashchange"].forEach(event => 
+	window.addEventListener(event, () => {
 	
 	transitionEffect();
 
@@ -11,7 +12,7 @@ window.onload = () => {
 	if (window.location.href.indexOf("about.html") > -1) {
 		copyContent();
 	}
-}
+}));
 
 // transition effect
 function transitionEffect() {
