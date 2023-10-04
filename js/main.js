@@ -1,5 +1,4 @@
-["load", "hashchange"].forEach(event => 
-	window.addEventListener(event, () => {
+window.onload = () => { 
 	
 	transitionEffect();
 
@@ -12,7 +11,11 @@
 	if (window.location.href.indexOf("about.html") > -1) {
 		copyContent();
 	}
-}));
+};
+
+window.onpageshow = () => {
+	transitionEffect();
+}
 
 // transition effect
 function transitionEffect() {
@@ -21,7 +24,7 @@ function transitionEffect() {
 
 	setTimeout(() => {
 		transition_el.classList.remove("Active");
-	}, 500);
+	}, 300);
 
 	for (let i = 0; i < entrances.length; i++) {
 		const entrance = entrances[i];
@@ -33,14 +36,14 @@ function transitionEffect() {
 
 			setTimeout(() => {
 				window.location.href = target;
-			}, 500);
+			}, 300);
 		});
 	}
 }
 
 // switch pages
 function switchAllPages() {
-	var t1 = 1500;
+	var t1 = 1000;
 	const tab_switchers = document.querySelectorAll("[data-switcher]");
 	const PL = document.querySelector(".tranSquareInner .middleLayer");
 	const PL2 = document.querySelector(".tranSquareInner .backfill");
@@ -113,9 +116,9 @@ function loadToggle(PL, PL2, PL3, t1) {
 	tab_load.classList.add("Active");
 
 	PT.setAttribute("data-content", "SYNC RATE");
-	PL.style.animation = "load 1s linear 0.2s forwards";
-	PL2.style.animation = "glow 400ms ease 1.2s infinite alternate";
-	PL3.style.animation = "glow 400ms ease 1.2s infinite alternate";
+	PL.style.animation = "load 600ms linear 100ms forwards";
+	PL2.style.animation = "glow 400ms ease 700ms infinite alternate";
+	PL3.style.animation = "glow 400ms ease 700ms infinite alternate";
 
 	syncRate(PL, t1);
 	
@@ -211,7 +214,7 @@ function returnButton(PL, PL2, PL3) {
 
 			setTimeout(() => {
 				document.removeEventListener("click", preventer, true);
-			}, 1000);
+			}, 800);
 		});
 	}
 }
